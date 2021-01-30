@@ -9,14 +9,15 @@
       instance_type: t1.micro
       image: ami-011b3ccf1bd6db744
       count: 2
-      key_name: ansible_key
+      key_name: ansible
       region: us-east-1
       wait: yes 
-      #group: DoWithPython
-      #group_id: sg-00fe30710bcfff987
-      #group_id: [ 'sg-00fe30710bcfff987','sg-0010cd50d200cfa69']
+      #group: ALL_TRAFFIC_SG
+      #group_id: sg-06a953df05803213d
+      #group_id: [ 'sg-06a953df05803213d','sg-879989fe']
       group_id:
-        - sg-00fe30710bcfff987
-        - sg-0010cd50d200cfa69
+        - sg-06a953df05803213d
+        - sg-879989fe
       instance_tags:
-        Env: test
+        Env: Dev
+        Name: Test_server
