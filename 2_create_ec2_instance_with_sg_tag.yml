@@ -6,11 +6,11 @@
    tasks:
    - name: Creating ec2 instance
      ec2:
-      instance_type: t1.micro
-      image: ami-011b3ccf1bd6db744
+      instance_type: t2.micro
+      image: ami-08e0ca9924195beba
       count: 2
       key_name: ansible
-      region: us-east-1
+      region: ap-south-1
       wait: yes 
       #group: ALL_TRAFFIC_SG
       #group_id: sg-06a953df05803213d
