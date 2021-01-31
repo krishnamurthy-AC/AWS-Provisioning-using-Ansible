@@ -4,7 +4,7 @@
    connection: local
    gather_facts: fasle
    tasks:
-   - name: starting ec2 instance
+   - name: stopping ec2 instance
      ec2:
       instance_ids: i-006dafad18394c3cb
       region: us-east-1
