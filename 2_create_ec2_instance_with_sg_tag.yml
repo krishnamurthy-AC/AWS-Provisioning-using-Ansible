@@ -7,10 +7,10 @@
    - name: Creating ec2 instance
      ec2:
       instance_type: t2.micro
-      image: ami-08e0ca9924195beba
-      count: 2
-      key_name: ansible
-      region: ap-south-1
+      image: ami-038f1ca1bd58a5790
+      count: 1
+      key_name: krish
+      region: us-east-1
       wait: yes 
       #group: ALL_TRAFFIC_SG
       #group_id: sg-06a953df05803213d
